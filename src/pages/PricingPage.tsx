@@ -85,8 +85,8 @@ export default function PricingPage() {
       const result = await createCheckoutSession({
         priceId: plan.priceId,
         mode: plan.mode,
-        successUrl: `${window.location.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
-        cancelUrl: `${window.location.origin}/cancel`,
+        successUrl: `${window.location.origin}/ptg/success?session_id={CHECKOUT_SESSION_ID}`,
+        cancelUrl: `${window.location.origin}/ptg/cancel`,
       })
       if (result.url) {
         window.location.href = result.url

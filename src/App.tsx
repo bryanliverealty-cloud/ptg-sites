@@ -13,7 +13,7 @@ import DashboardPage from './pages/DashboardPage'
 export default function App() {
   return (
     <AuthProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/ptg">
         <Layout>
           <Routes>
             <Route path="/" element={<LandingPage />} />
